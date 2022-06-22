@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1000;
+    transition: 0.7s ease-in-out;
+}
+#header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    width: 150px;
+    height: 50px;
+    background: url(../img/logo_white.png) no-repeat;
+    display: block;
+    background-size: contain;
+    margin-left: 50px;
+
+}
+
+.header_nav {
+    width: 520px;
+    height: 30px;
+}
+
+.header_nav > ul > li {
+    float: left;
+    font-size: 20px;
+}
+
+.header_nav > ul > li > a {
+    color: #fff;
+}
+
+.header_nav > ul > li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.translation {
+    width: 110px;
+    height: 21px;
+    margin-right: 50px;
+}
+
+.translation > li {
+    float: left;
+}
+
+.translation > li > a {
+    color: rgb(212, 212, 212);
+}
+
+.translation > li:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* 스크롤이 아래로 내려갔을 때 헤더 */
+
+header.sticky {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    z-index: 1000;
+}
+
+header.sticky .logo a{
+    background: url(../img/logo_black.png) no-repeat;
+    display: block;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+header.sticky .header_nav ul li a {
+    color: #111;
+}
+
+header.sticky .translation li a {
+    color: #111;
+}
+
+/* 메인 슬라이더 */
+
+#main_slide_wrap {
+    width: 100%;
+    height: 965px;
+    position: fixed;
+}
+
+.main_slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_slide > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_slide > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_slide > li:not(:first-child) {
+    display: none;
+}
+
+/* 메인 컨텐츠 wrap */
+.main_container_wrap {
+    position: relative;
+    top: 95vh;
+    background-color: #fff;
+}
+
+/* 메인 인포 박스 */
+
+#main_info_box_wrap {
+    width: 100%;
+    height: 280px;
+    background-color: #111;
+}
+
+.main_info_box {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_info_left {
+    width: 375px;
+}
+
+.main_info_left strong {
+    color: #fff;
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.main_info_right {
+    width: 365px;
+    line-height: 32px;
+}
+
+.main_info_right p {
+    font-size: 13px;
+    color: #ddd;
+    font-weight: 600;
+}
+
+/* 메인 연혁 히스토리 박스 */
+
+.main_history_box {
+    width: 1200px;
+    height: 4700px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 160px;
+}
+/* 메인 연혁 히스토리 가로줄 */
+.bg {
+    width: 1200px;
+    height: 4700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main_history_box_line1 {
+    width: 1px;
+    height: 4700px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: #ddd;
+}
+
+.main_history_box_line2 {
+    width: 1px;
+    height: 4700px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    background-color: #ddd;
+}
+
+.main_history_box_line3 {
+    width: 1px;
+    height: 4700px;
+    position: absolute;
+    top: 0;
+    left: 800px;
+    background-color: #ddd;
+}
+
+.main_history_box_line4 {
+    width: 1px;
+    height: 4700px;
+    position: absolute;
+    top: 0;
+    left: 1200px;
+    background-color: #ddd;
+}
+
+/* 메인 연혁 히스토리 내용 */
+
+.title {
+    font-size: 20px;
+    height: 29px;
+    line-height: 29px;
+    color: #2967f3;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+/* 첫번째 연혁 아이템 */
+.history_item1 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 100px;
+}
+
+.history_item1_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item1_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item1_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item1_img_box {
+    position: absolute;
+    left: 401px;
+    width: 420px;
+    height: 260px;
+}
+
+.history_item1_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 두번째 연혁 아이템 */
+
+.history_item2 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 401px;
+}
+
+.history_item2_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item2_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item2_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item2_img_box {
+    position: absolute;
+    left: 400px;
+    width: 420px;
+    height: 250px;
+}
+
+.history_item2_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 세번째 연혁 아이템 */
+
+.history_item3 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 0px;
+}
+
+.history_item3_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item3_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item3_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item3_img_box {
+    position: absolute;
+    left: 401px;
+    width: 400px;
+    height: 250px;
+}
+
+.history_item3_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 네번째 연혁 아이템 */
+
+.history_item4 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 400px;
+}
+
+.history_item4_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item4_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item4_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item4_img_box {
+    position: absolute;
+    left: 401px;
+    width: 380px;
+    height: 230px;
+    top: 5%;
+}
+
+.history_item4_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 다섯번째 연혁 아이템 */
+
+.history_item5 {
+    position: relative;
+    z-index: 2;
+    width: 1200px;
+    height: 250px;
+    margin-top: 270px;
+    left: 0;
+}
+
+.history_item5_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item5_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item5_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item5_img_box {
+    position: absolute;
+    left: 401px;
+    width: 330px;
+    height: 500px;
+    top: -50%;
+}
+
+.history_item5_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.history_item5_img_logo {
+    position: absolute;
+    left: 865px;
+    width: 260px;
+    height: 900px;
+    top: -30%;
+}
+
+.history_item5_img_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 여섯번째 연혁 아이템 */
+
+.history_item6 {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 250px;
+    margin-top: 250px;
+    left: 400px;
+}
+
+.history_item6_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item6_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item6_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+/* 일곱번째 연혁 아이템 */
+
+.history_item7 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 0;
+}
+
+.history_item7_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item7_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item7_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item7_img_box {
+    position: absolute;
+    left: 401px;
+    width: 432px;
+    height: 290px;
+    top: -8%;
+}
+
+.history_item7_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 여덟번째 연혁 아이템 */
+
+.history_item8 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 400px;
+}
+
+.history_item8_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item8_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item8_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item8_img_box {
+    position: absolute;
+    left: 401px;
+    width: 350px;
+    height: 320px;
+    top: -15%;
+}
+
+.history_item8_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 아홉번째 연혁 아이템 */
+
+.history_item9 {
+    position: relative;
+    z-index: 2;
+    width: 801px;
+    height: 250px;
+    margin-top: 160px;
+    left: 0;
+}
+
+.history_item9_text_box {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    padding-left: 5px;
+}
+
+.history_item9_text_box h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+}
+
+.history_item9_text_box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #474747;
+}
+
+.history_item9_img_box {
+    position: absolute;
+    left: 401px;
+    width: 440px;
+    height: 290px;
+}
+
+.history_item9_img_box img {
+    width: 100%;
+    height: 100%;
+}
