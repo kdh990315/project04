@@ -126,11 +126,11 @@ header.sticky .translation li a {
     width: 100%;
     height: 100%;
 }
-
+/* 
 .main_slide > li > img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .main_slide > li:not(:first-child) {
     display: none;
@@ -186,7 +186,7 @@ header.sticky .translation li a {
 
 .main_history_box {
     width: 1200px;
-    height: 4700px;
+    height: 4300px;
     margin: 0 auto;
     position: relative;
     padding-top: 180px;
@@ -195,7 +195,7 @@ header.sticky .translation li a {
 /* 메인 연혁 히스토리 가로줄 */
 .bg {
     width: 1200px;
-    height: 4700px;
+    height: 4300px;
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +204,7 @@ header.sticky .translation li a {
 
 .main_history_box_line1 {
     width: 1px;
-    height: 4700px;
+    height: 4300px;
     position: absolute;
     top: 0;
     left: 0px;
@@ -213,7 +213,7 @@ header.sticky .translation li a {
 
 .main_history_box_line2 {
     width: 1px;
-    height: 4700px;
+    height: 4300px;
     position: absolute;
     top: 0;
     left: 400px;
@@ -222,7 +222,7 @@ header.sticky .translation li a {
 
 .main_history_box_line3 {
     width: 1px;
-    height: 4700px;
+    height: 4300px;
     position: absolute;
     top: 0;
     left: 800px;
@@ -231,7 +231,7 @@ header.sticky .translation li a {
 
 .main_history_box_line4 {
     width: 1px;
-    height: 4700px;
+    height: 4300px;
     position: absolute;
     top: 0;
     left: 1200px;
@@ -628,4 +628,304 @@ header.sticky .translation li a {
 .history_item9_img_box img {
     width: 100%;
     height: 100%;
+}
+
+/* 비디오 */
+
+#video_wrap {
+    width: 100%;
+    height: 1100px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(42,42,42,1) 13%, rgba(0,0,0,1) 27%, rgba(0,0,0,1) 73%, rgba(22,19,10,1) 87%, rgba(255,255,255,1) 100%);
+    position: relative;
+}
+
+#video_wrap video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+/* 월드맵 */
+#world_map_wrap {
+    width: 100%;
+    height: 70vh;
+    margin: 100px 0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,249,249,1) 10%, rgba(255,249,249,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+.world_map {
+    width: 1200px;
+    height: 100%;
+    background: url(../img/worldmap.png) no-repeat;
+    display: block;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+
+.world_map h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nation1 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 55.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.nation1 p { 
+    opacity: 0;
+}
+
+.nation2 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 64.5%;
+    left: 38.7%;
+    transform: translate(-50%, -50%);
+}
+
+.nation2 p { 
+    opacity: 0;
+}
+
+.nation3 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 76%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+}
+
+.nation3 p { 
+    opacity: 0;
+}
+
+.nation4 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.nation4 p { 
+    opacity: 0;
+}
+
+.nation5 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.nation5 p { 
+    opacity: 0;
+}
+
+.nation6 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 49%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.nation6 p { 
+    opacity: 0;
+}
+
+.nation7 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 53%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+
+.nation7 p { 
+    opacity: 0;
+}
+
+.nation8 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 56.5%;
+    left: 19.5%;
+    transform: translate(-50%, -50%);
+}
+
+.nation8 p { 
+    opacity: 0;
+}
+
+.nation9 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 81%;
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+}
+
+.nation9 p { 
+    opacity: 0;
+}
+
+.nation10 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 53%;
+    left: 75.5%;
+    transform: translate(-50%, -50%);
+}
+
+.nation10 p { 
+    opacity: 0;
+}
+
+.nation11 {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2967f3;
+    border-radius: 5px;
+    position: absolute;
+    top: 49%;
+    left: 76.5%;
+    transform: translate(-50%, -50%);
+}
+
+.nation11 p { 
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #111;
+    margin-top: 160px;
+}
+
+#footer_wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_ul1 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo a {
+    background: url(../img/logo_white.png) no-repeat;
+    display: block;
+    background-size: contain;
+    width: 120px;
+    height: 39px;
+}
+
+.footer_ul1 li {
+    float: left;
+}
+
+.footer_ul1 li a{
+    color: #c1c1c1;
+}
+
+.footer_ul1 li:not(:first-child) {
+    margin-left: 30px;
+}
+
+
+.footer_ul2 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul2 li {
+    float: left;
+    margin-right: 30px;
+    color: #c1c1c1;
+}
+
+.footer_ul3 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul3 li {
+    float: left;
+    margin-right: 30px;
+    color: #c1c1c1;
+}
+
+.footer_ul4 {
+    width: 850px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul4 li {
+    color: #c1c1c1;
+    font-size: 11px;
 }
