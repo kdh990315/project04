@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1000;
+    transition: 0.7s ease-in-out;
+}
+#header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    width: 150px;
+    height: 50px;
+    background: url(../img/logo_white.png) no-repeat;
+    display: block;
+    background-size: contain;
+    margin-left: 50px;
+
+}
+
+.header_nav {
+    width: 520px;
+    height: 30px;
+}
+
+.header_nav > ul > li {
+    float: left;
+    font-size: 20px;
+}
+
+.header_nav > ul > li > a {
+    color: #fff;
+}
+
+.header_nav > ul > li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.translation {
+    width: 110px;
+    height: 21px;
+    margin-right: 50px;
+}
+
+.translation > li {
+    float: left;
+}
+
+.translation > li > a {
+    color: rgb(212, 212, 212);
+}
+
+.translation > li:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* 스크롤이 아래로 내려갔을 때 헤더 */
+
+header.sticky {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    z-index: 1000;
+}
+
+header.sticky .logo a{
+    background: url(../img/logo_black.png) no-repeat;
+    display: block;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+header.sticky .header_nav ul li a {
+    color: #111;
+}
+
+header.sticky .translation li a {
+    color: #111;
+}
+
+#main_img {
+    width: 100%;
+    height: 900px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main_img_wrap {
+    width: 100%;
+    height: 100%;
+    background:rgba(31, 4, 0, 0.2)
+}
+
+#main_wrap {
+    width: 100%;
+    height: 8000px;
+    position: relative;
+    top: 1000px;
+    left: 0;
+}
+
+#slide_container {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rebeccapurple;
+}
+
+#info_container {
+    width: 100%;
+    height: 5000px;
+    position: absolute;
+    top: 700px;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 150px 0 220px;
+}
+
+#info {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: yellowgreen;
+}
+
+.info_box1 {
+    width: 800px;
+    height: 780px;
+    margin-left: 400px;
+    background-color: green;
+}
+
+.info_box_name1 {
+    width: 100%;
+    height: 60px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.info_box_name1 strong {
+    font-size: 38px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.info_box1_name span {
+    color: #c9c9c9;
+    font-weight: 600;
+}
+
+.info_box_img1 {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.info_box_img1 img {
+    width: 1150px;
+    height: 100%;
+}
+
+.info_text_box1 p {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 24px;
+    color: #666;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* 푸터 */
+
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #111;
+    margin-top: 160px;
+}
+
+#footer_wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_ul1 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo a {
+    background: url(../img/logo_white.png) no-repeat;
+    display: block;
+    background-size: contain;
+    width: 120px;
+    height: 39px;
+}
+
+.footer_ul1 li {
+    float: left;
+}
+
+.footer_ul1 li a{
+    color: #c1c1c1;
+}
+
+.footer_ul1 li:not(:first-child) {
+    margin-left: 30px;
+}
+
+
+.footer_ul2 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul2 li {
+    float: left;
+    margin-right: 30px;
+    color: #c1c1c1;
+}
+
+.footer_ul3 {
+    width: 850px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul3 li {
+    float: left;
+    margin-right: 30px;
+    color: #c1c1c1;
+}
+
+.footer_ul4 {
+    width: 850px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_ul4 li {
+    color: #c1c1c1;
+    font-size: 11px;
+}
