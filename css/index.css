@@ -263,6 +263,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item1_text_box h1 {
@@ -305,6 +308,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item2_text_box h1 {
@@ -347,6 +353,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item3_text_box h1 {
@@ -389,6 +398,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item4_text_box h1 {
@@ -432,6 +444,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item5_text_box h1 {
@@ -488,6 +503,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item6_text_box h1 {
@@ -518,6 +536,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item7_text_box h1 {
@@ -561,6 +582,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item8_text_box h1 {
@@ -604,6 +628,9 @@ header.sticky .translation li a {
     width: 400px;
     left: 0;
     padding-left: 5px;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .history_item9_text_box h1 {
@@ -628,6 +655,18 @@ header.sticky .translation li a {
 .history_item9_img_box img {
     width: 100%;
     height: 100%;
+}
+
+.history_img1, .history_img2, .history_img3, .history_img4, .history_img5, .history_img6, .history_img7 {
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.history_long_img {
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 /* 비디오 */
@@ -668,10 +707,27 @@ header.sticky .translation li a {
 
 .world_map h1 {
     position: absolute;
-    top: 15%;
+    top: 25%;
+    opacity: 0;
+    transition: 1s ease;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.world_map p {
+    position: absolute;
+    top: 35%;
+    opacity: 0;
+    transition: 1s ease;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.world_map > p > a {
+    color: #2967f3;
 }
 
 .nation1 {
