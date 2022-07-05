@@ -8,8 +8,14 @@
     <script src="js/header_sticky.js"></script>
     <script src="js/sub_scroll.js"></script>
     <script src="js/sub_slide.js"></script>
+    <script src="js/header_under_line.js"></script>
     <link rel="stylesheet" href="css/sub1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+    <!-- 스와이퍼 CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -21,8 +27,8 @@
 
             <nav class="header_nav">
                 <ul>
-                    <li><a href="index.html">회사 소개</a></li>
-                    <li><a href="sub1.html">기술</a></li>
+                    <li><a href="index.html" id="index">회사 소개</a></li>
+                    <li><a href="sub1.html" id="sub1">이레마</a></li>
                     <li><a href="">제작</a></li>
                     <li><a href="">디자인</a></li>
                     <li><a href="">장인 소개</a></li>
@@ -106,9 +112,41 @@
                     </div>
                 </div>
                 
-                <div id="item_slide_box">
-                    ul.item_slide
+
+                <!-- 스와이퍼 -->
+                <div id="item_swiper_box">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="img/sub1.jpg" alt="sub1_img"></div>
+                          <div class="swiper-slide"><img src="img/sub2.jpg" alt="sub2_img"></div>
+                          <div class="swiper-slide"><img src="img/sub3.jpg" alt="sub3_img"></div>
+                          <div class="swiper-slide"><img src="img/sub4.jpg" alt="sub4_img"></div>
+                          <div class="swiper-slide"><img src="img/sub5.jpeg" alt="sub5_img"></div>
+                          <div class="swiper-slide"><img src="img/sub6.jpg" alt="sub6_img"></div>
+                          <div class="swiper-slide"><img src="img/item3.jpg" alt="sub7_img"></div>
+                          <div class="swiper-slide"><img src="img/item4.jpg" alt="sub8_img"></div>
+                          <div class="swiper-slide"><img src="img/item5.jpg" alt="sub9_img"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
+
+                
+                <!-- 스와이퍼 스크립트 -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4.5,
+                    spaceBetween: 20,
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                    },
+                  });
+                </script>
+
             </div>
         </div>
 
@@ -254,31 +292,33 @@
 
                 
             </div>
+
+            <footer>
+                <div id="footer_wrap">
+                    <ul class="footer_ul1">
+                        <li class="footer_logo"><a href="index.html"></a></li>
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">채용</a></li>
+                        <li><a href="">제휴 문의</a></li>
+                    </ul>
+                    <ul class="footer_ul2">
+                        <li>대표이사 : 김동형</li>
+                        <li>서울시 성북구 하월곡 루나벨리 B동, 2층(송정동), 13579</li>
+                    </ul>
+                    <ul class="footer_ul3">
+                        <li>대표전화 : 010-5509-6655</li>
+                        <li>사업자등록번호 : 123-45-11515</li>
+                        <li>통신판매업 신고번호 : 123-22-333-52</li>
+                    </ul>
+                    <ul class="footer_ul4">
+                        <li>© ILEMA ENTERTAINMENT 2022</li>
+                    </ul>
+                </div>
+            </footer>
         </div>
 
-        <footer>
-            <div id="footer_wrap">
-                <ul class="footer_ul1">
-                    <li class="footer_logo"><a href="index.html"></a></li>
-                    <li><a href="">서비스 이용약관</a></li>
-                    <li><a href="">개인정보 처리방침</a></li>
-                    <li><a href="">채용</a></li>
-                    <li><a href="">제휴 문의</a></li>
-                </ul>
-                <ul class="footer_ul2">
-                    <li>대표이사 : 김동형</li>
-                    <li>서울시 성북구 하월곡 루나벨리 B동, 2층(송정동), 13579</li>
-                </ul>
-                <ul class="footer_ul3">
-                    <li>대표전화 : 010-5509-6655</li>
-                    <li>사업자등록번호 : 123-45-11515</li>
-                    <li>통신판매업 신고번호 : 123-22-333-52</li>
-                </ul>
-                <ul class="footer_ul4">
-                    <li>© ILEMA ENTERTAINMENT 2022</li>
-                </ul>
-            </div>
-        </footer>
+
 
         <script src="js/back_to_top.js"></script>
     </div>

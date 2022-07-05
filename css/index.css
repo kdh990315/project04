@@ -43,7 +43,7 @@ header {
 }
 
 .header_nav {
-    width: 520px;
+    width: 550px;
     height: 30px;
 }
 
@@ -103,6 +103,10 @@ header.sticky .header_nav ul li a {
 
 header.sticky .translation li a {
     color: #111;
+}
+
+.toggle {
+    display: none;
 }
 
 /* 메인 슬라이더 */
@@ -743,7 +747,7 @@ header.sticky .translation li a {
     text-align: center;
 }
 
-.world_map p {
+.world_map > p {
     position: absolute;
     top: 35%;
     opacity: 0;
@@ -762,15 +766,41 @@ header.sticky .translation li a {
     width: 10px;
     height: 10px;
     border: 5px solid #2967f3;
-    border-radius: 5px;
     position: absolute;
     top: 55.5%;
     left: 43%;
     transform: translate(-50%, -50%);
 }
 
-.nation1 p { 
+.nat {
+
+    border-radius: 5px;
+}
+
+.nat:hover {
+    border-radius: 0px;
+    border: 2px solid #2967f3;
+    width: 19px;
+    height: 1px;
+    cursor: pointer;
+}
+
+.nat:hover p {
+    opacity: 1;
+}
+
+.nat p { 
+    width: 210px;
+    position: absolute;
+    transform: translate(10%, -54%);
+    font-weight: bold;
+    text-align: left;
     opacity: 0;
+    transition: 0.7s all ease-out;
+}
+
+.nat:nth-of-type(3) p{
+    width: 150px;
 }
 
 .nation2 {
@@ -784,9 +814,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation2 p { 
-    opacity: 0;
-}
 
 .nation3 {
     width: 10px;
@@ -799,9 +826,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation3 p { 
-    opacity: 0;
-}
 
 .nation4 {
     width: 10px;
@@ -812,10 +836,6 @@ header.sticky .translation li a {
     top: 43%;
     left: 25%;
     transform: translate(-50%, -50%);
-}
-
-.nation4 p { 
-    opacity: 0;
 }
 
 .nation5 {
@@ -829,9 +849,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation5 p { 
-    opacity: 0;
-}
 
 .nation6 {
     width: 10px;
@@ -842,10 +859,6 @@ header.sticky .translation li a {
     top: 49%;
     left: 20%;
     transform: translate(-50%, -50%);
-}
-
-.nation6 p { 
-    opacity: 0;
 }
 
 .nation7 {
@@ -859,9 +872,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation7 p { 
-    opacity: 0;
-}
 
 .nation8 {
     width: 10px;
@@ -874,9 +884,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation8 p { 
-    opacity: 0;
-}
 
 .nation9 {
     width: 10px;
@@ -889,9 +896,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation9 p { 
-    opacity: 0;
-}
 
 .nation10 {
     width: 10px;
@@ -904,9 +908,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation10 p { 
-    opacity: 0;
-}
 
 .nation11 {
     width: 10px;
@@ -919,9 +920,6 @@ header.sticky .translation li a {
     transform: translate(-50%, -50%);
 }
 
-.nation11 p { 
-    opacity: 0;
-}
 
 
 

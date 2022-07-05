@@ -6,4 +6,7 @@ $(function () {
             $('header').removeClass('sticky');
         }
     });
+
+    
 });
+
