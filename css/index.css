@@ -105,8 +105,62 @@ header.sticky .translation li a {
     color: #111;
 }
 
-.toggle {
+header.sticky #toggle {
+    color: #111;
+}
+
+/* 오른쪽 슬리이더 네브 박스 */
+
+#toggle {
     display: none;
+}
+
+#toggle_nav_box {
+    width: 300px;
+    height: 100%;
+    background: #222;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+#close_toggle {
+    color: white;
+    display: block;
+    line-height: 56px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 30px;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+
+#toggle_nav_box > ul {
+    margin-top: 100px;
+}
+
+#toggle_nav_box > ul > li {
+    color: #111;
+    width: 300px;
+    height: 20px;
+    margin: 50px 0;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+#toggle_nav_box > ul > li > a {
+    color: #fff;
+}
+
+#toggle_nav_box > ul > li:first-child a {
+    border-bottom: 1px solid #fff;
+}
+
+#toggle_nav_box > ul > li:hover a {
+    border-bottom: 1px solid #fff;
 }
 
 /* 메인 슬라이더 */
