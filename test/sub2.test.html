@@ -24,34 +24,9 @@
             justify-content: space-around;
         }
 
-        .main_contents1 {
+        .main_contents {
             width: 380px;
             height: 600px;
-            background-color: blanchedalmond;
-            background-image: url(../img/expert11.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .main_contents2 {
-            width: 380px;
-            height: 600px;
-            background-color: blanchedalmond;
-            background-image: url(../img/expert2.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .main_contents3 {
-            width: 380px;
-            height: 600px;
-            background-color: blanchedalmond;
-            background-image: url(../img/expert3.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         .main_contents_wrap {
@@ -73,11 +48,18 @@
         .main_content_name {
             width: 100%;
             position: absolute;
-            top: 25%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
             text-align: center;
+            transition: 2s all ease-in-out;
+            opacity: 0;
+        }
+
+        .main_content_name {
+            top: 25%;
+            opacity: 1;
         }
         
         .main_content_name p {
@@ -92,15 +74,23 @@
 
         .main_content_text {
             width: 100%;
-            height: 400px;
+            height: 00px;
             position: absolute;
             left: 0;
             bottom: 0;
             background-color: rgba(212, 212, 212, 0.85);
+            transition: 2s all ease-in-out;
+            overflow: hidden;
+        }
+
+        .main_content_text.on {
+            height: 400px;
         }
 
         .main_content_text p {
             width: 100%;
+            margin: 20px 0;
+            line-height: 27px;
         }
 
         .main_contents_line {
@@ -113,11 +103,19 @@
             transform: translate(-50%, -50%);
             border-radius: 5px;
         }
+
+        .main_contents_line.on {
+            height: 400px;
+        }
     </style>
 </head>
 <body>
     <div id="main_contents_box">
-        <div class="main_contents1">
+        <div class="main_contents" style=
+        "background-image: url(../img/expert11.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
             <div class="main_contents_wrap">
                 <span><i class="fa-solid fa-plus"></i></span>
                 
@@ -140,21 +138,92 @@
             </div>
         </div>
 
-        <div class="main_contents2">
+        <div class="main_contents" style=
+        "background-image: url(../img/expert2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
             <div class="main_contents_wrap">
                 <div class="main_contents_wrap">
                     <span><i class="fa-solid fa-plus"></i></span>
+
+                    <div class="main_content_name">
+                        <p>Alain Delon</p>
+                        <small>알랭 들롱</small>
+                    </div>
+    
+                    <div class="main_content_text">
+                        <p>출생 : 프랑스</p>
+                        <p>담당 : 디자인 및 패션모델</p>
+                        <p>소개 : 15년전 프랑스에서 작은 의류가게를 운영하던 ‘알랭 들롱’씨는
+                             마케팅 담당인 ‘루이 가렐’씨의 눈에 둘어와 ‘이레마’에 합류하게 되었습니다. 
+                             ‘알랭 들롱’씨는 뛰어난 디자인감각과 패션
+                            센스가 있어 어느 누구에게도 어울리는 제품의 디자인을 만들어 낼 수 있습니다.</p>
+                    </div>
+    
+                    <div class="main_contents_line"></div>
                 </div>
             </div>
         </div>
 
-        <div class="main_contents3">
+        <div class="main_contents" style=
+        "background-image: url(../img/expert3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
             <div class="main_contents_wrap">
                 <div class="main_contents_wrap">
                     <span><i class="fa-solid fa-plus"></i></span>
+
+                    <div class="main_content_name">
+                        <p>Alain Delon</p>
+                        <small>알랭 들롱</small>
+                    </div>
+    
+                    <div class="main_content_text">
+                        <p>출생 : 프랑스</p>
+                        <p>담당 : 디자인 및 패션모델</p>
+                        <p>소개 : 15년전 프랑스에서 작은 의류가게를 운영하던 ‘알랭 들롱’씨는
+                             마케팅 담당인 ‘루이 가렐’씨의 눈에 둘어와 ‘이레마’에 합류하게 되었습니다. 
+                             ‘알랭 들롱’씨는 뛰어난 디자인감각과 패션
+                            센스가 있어 어느 누구에게도 어울리는 제품의 디자인을 만들어 낼 수 있습니다.</p>
+                    </div>
+    
+                    <div class="main_contents_line"></div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var main_contents = document.getElementsByClassName("main_contents"),
+                text_box = document.getElementsByClassName("main_content_text"),  // 내용
+                name_box = document.getElementsByClassName("main_content_name");  // 이름
+                 // 메인 박스
+
+                
+
+                function dd() {
+                for (var i = 0; i < main_contents.length; i++) {
+                    main_contents[i].addEventListener("mouseover", function () {
+                        text_box[1].classList.add("on");
+
+                    });
+                    main_contents[i].addEventListener("mouseleave", function () {
+                        text_box[1].classList.remove("on");
+
+                    });
+                //     main_contents[i].addEventListener("mouseleave", function
+                
+                //         text_box[0].classList.remove("on");
+                // });
+            }
+
+            
+                    // 메인 박스에 마우스 올리면 on클래스 추가하면서 내용, 이름 생성
+            }
+            dd();
+        });
+    </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ $(function () {
 
                 if($(this).scrollTop() <= $img_box.offset().top - 699) {
                     $img_box.css({
-                        "width" : "800px"
+                        "width" : "100%"
                     });
 
                     $info_menu_on.removeClass("on");
@@ -19,7 +19,7 @@ $(function () {
 
                 if($(this).scrollTop() > $img_box.offset().top -700) {
                     $img_box.css({
-                        "width" : "58vw"
+                        "width" : "100%"
                     });
                     
                     $info_menu_on.addClass("on");
@@ -27,7 +27,7 @@ $(function () {
                 }   
                 if(($(this).scrollTop() > $img_box.offset().top + 300)) {
                     $img_box.css({
-                        "width" : "800px"
+                        "width" : "100%"
                     });
 
                     $info_menu_on.removeClass("on");
