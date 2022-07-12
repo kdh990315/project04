@@ -68,6 +68,10 @@ header {
     margin-left: 50px;
 }
 
+.adok {
+    border-bottom: 1px solid #fff;
+}
+
 .translation {
     width: 120px;
     height: 21px;

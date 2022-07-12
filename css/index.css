@@ -60,6 +60,10 @@ header {
     font-size: 20px;
 }
 
+.header_nav > ul > li:hover {
+    border-bottom: 1px solid #fff;
+}
+
 .header_nav > ul > li > a {
     color: #fff;
 }
@@ -85,6 +89,16 @@ header {
 .translation > li:not(:first-child) {
     margin-left: 20px;
 }
+
+
+
+
+.adok {
+    border-bottom: 1px solid #fff;
+}
+
+
+
 
 /* 스크롤이 아래로 내려갔을 때 헤더 */
 

@@ -19,7 +19,7 @@ $(function () {
 
                 if($(this).scrollTop() > $img_box.offset().top -700) {
                     $img_box.css({
-                        "width" : "100%"
+                        "width" : "58vw"
                     });
                     
                     $info_menu_on.addClass("on");
