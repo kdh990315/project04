@@ -313,6 +313,7 @@ header.sticky #toggle {
     background-color: rgba(212, 212, 212, 0.85);
     transition: 1s all ease-in-out;
     overflow: hidden;
+    padding: 0px 10px;
 }
 
 .main_content_text.on {

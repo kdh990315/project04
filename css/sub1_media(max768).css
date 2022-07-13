@@ -233,6 +233,7 @@
         transition: 1s all;
         opacity: 0;
         transform: translateY(50px);
+        padding: 0px 10px;
     }
 
     .slide.dh {
