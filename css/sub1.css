@@ -167,9 +167,6 @@ header.sticky #toggle {
     color: #fff;
 }
 
-#toggle_nav_box > ul > li:first-child a {
-    border-bottom: 1px solid #fff;
-}
 
 #toggle_nav_box > ul > li:hover a {
     border-bottom: 1px solid #fff;
